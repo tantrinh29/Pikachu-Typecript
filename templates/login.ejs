@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs') %>
+  </head>
+  <body>
+      <main class="container">
+        <header class="row">
+            <%- include('partials/header.ejs') %>
+        </header>
+        <section class="row" id="app">
+            <div class="col-6 offset-3 mt-3">
+                <form action="board" autocomplete="off">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text"
+                        class="form-control" name="username" id="username" aria-describedby="UsernameHelpId" placeholder="Username">
+                        <small id="UsernameHelpId" class="form-text text-muted invisible">
+                            Username must be not empty or at least 3 character</small>
+                    </div>
+                    <div class="form-group">
+                        <hr>
+                        <button type="button" id="play" class="btn btn-primary">Play Game</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="row">
+            <%- include('partials/footer.ejs') %>
+        </footer>
+      </main>
+      <script src="assets/user.bundle.js"></script>
+      <script src="assets/vendors-node_modules_autobind-decorator_lib_esm_index_js-node_modules_class-validator_esm5_de-157a7d.bundle.js"></script>
+      <%- include('partials/foot.ejs') %>
+  </body>
+</html>

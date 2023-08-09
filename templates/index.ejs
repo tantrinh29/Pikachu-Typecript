@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs') %>
+  </head>
+  <body>
+  
+    <main class="container">
+        <header class="row">
+            <%- include('partials/header.ejs') %>
+        </header>
+        <div id="app">
+            <section class="row" id="board">
+
+            </section>
+           <form action="board">
+            <section class="row">
+                <div class="col" id="reset">
+                    <hr>
+                    <button class="btn btn-primary" id="reset">Reset Game</button>
+                   
+                   <a href="/" id="cangame">Cancel Game</a>
+                </div>
+            </section>
+          </form>
+        </div>
+
+        <footer class="row">
+            <%- include('partials/footer.ejs') %>
+        </footer>
+        
+      </main>
+      <script src="assets/main.bundle.js"></script>
+      <script src="assets/vendors-node_modules_autobind-decorator_lib_esm_index_js-node_modules_css-loader_dist_runtime-efc508.bundle.js"></script>
+
+
+      <%- include('partials/foot.ejs') %>
+  </body>
+</html>

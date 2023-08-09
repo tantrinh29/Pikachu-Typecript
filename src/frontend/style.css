@@ -1,0 +1,13 @@
+.gameItem{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px #e8f5ee;
+    height: 137px;
+    max-width: 169px;
+}
+.unmatched{
+    background-color: rgb(248, 0, 0);
+}
+.img-fluid{
+    max-width: 63%;
+}
